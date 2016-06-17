@@ -1,0 +1,570 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\mode<presentation>
+{
+  %FrankfurtLuebeckMadridMalmoePittsburghWarsaw
+ \usetheme{Frankfurt}
+  %\usecolortheme{default}
+  %\usepackage{beamerthemesplit}% or try albatross, beaver, crane, ...
+  %\usefonttheme{default}  % or try serif, structurebold, ...
+  %\setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+%\beamertemplatenavigationsymbolsempty 
+%\usetheme[secheader,compress]{Madrid} %Primary theme
+\setbeamertemplate{headline}{}  % uncomment this line if do not want headline shown in every frame.
+
+\logo{\includegraphics[height=1.0cm]{img/ubp.png}}
+% Change base colour beamer@blendedblue (originally RGB: 0.2,0.2,0.7)
+
+% Menambahkan Background
+\usepackage{tikz}
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.075]
+{\includegraphics[height=\paperheight,width=\paperwidth]{img/ubpbg.png}};}
+%{\includegraphics[height=9cm,width=9cm]{logo.png}};}
+
+\colorlet{beamer@blendedblue}{cyan!95!black}
+
+\usepackage{listings}
+\lstloadlanguages{Python}
+
+\usepackage{alltt}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{beamerprosper}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{colortbl}
+\usepackage{helvet}
+\usepackage{mathptmx}
+\usepackage{multirow}
+\usepackage{pgf}
+\usepackage{smartdiagram}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{ulem}
+\usepackage{xmpmulti}
+
+\DeclareGraphicsRule{*}{mps}{*}{}
+\DeclareMathOperator*{\argmax}{\arg\max}
+
+\usetikzlibrary{%
+  arrows,%
+  automata,%
+  calc,%
+  trees,%
+  positioning,%
+  chains,%
+  shapes,%
+  shapes.arrows,%
+  shapes.geometric,%
+  shapes.misc,% wg. rounded rectangle
+  shapes.symbols,%
+  decorations.pathreplacing,%
+  decorations.pathmorphing,% /pgf/decoration/random steps | erste Graphik
+  matrix,%
+  scopes,%
+  shadows%
+ }
+
+%\includeonlyframes{cur}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+%PDF Information
+\title{Nono Heryana}
+\subject{nono@unsika.ac.id}
+\author{Nono Heryana}
+\keywords{nono, ganteng}
+
+%header
+\useoutertheme[subsection=false]{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Membuat Presentasi dengan LyX
+\end_layout
+
+\begin_layout Subtitle
+LyX emang keren!
+\end_layout
+
+\begin_layout Author
+Nono Heryana
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size normal
+nonoheryana@gmail.com
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Nono Heryana
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+Fakultas Teknologi dan Ilmu Komputer
+\begin_inset Newline newline
+\end_inset
+
+Universitas Buana Perjuangan Karawang
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+UBP Karawang
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Karawang, 2016
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Intro
+\end_layout
+
+\begin_layout Subsection
+Latar Belakang
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Latar Belakang
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+latar belakang
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rumusan Masalah
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Rumusan Masalah
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Rumusan Masalah
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metode
+\end_layout
+
+\begin_layout Subsection
+Tinjauan Studi
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tinjauan Studi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Tinjauan Studi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+Metode
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Metode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Metode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hasil
+\end_layout
+
+\begin_layout Subsection
+Hasil
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hasil
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Hasil
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pengujian
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pengujian
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Pengujian
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kesimpulan
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Kesimpulan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Kesimpulan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thanks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+feedback = 
+\color blue
+raw_input
+\color inherit
+ ( 
+\color red
+’Questions ?’
+\color inherit
+ ) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\color blue
+if
+\color inherit
+ 
+\color red
+’?’
+\color inherit
+ 
+\color blue
+in
+\color inherit
+ feedback : 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color blue
+if
+\color inherit
+ have_answer (): 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+give_answer () 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\color blue
+else
+\color inherit
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+pretend_the_question_is_ill_posed () 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\color blue
+else
+\color inherit
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color blue
+print
+\color inherit
+ 
+\color red
+’Thanks for your attention.’
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
